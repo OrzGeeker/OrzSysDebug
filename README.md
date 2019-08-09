@@ -10,9 +10,7 @@ The Pod Use Apple's Private API, so you should only depend this pod for debug Ta
 ## Add to Podfile
 
 ```
-source 'https://github.com/OrzGeeker/Specs.git'
-...
-pod 'OrzSysDebug', :configurations=>['Debug']
+pod 'OrzSysDebug', :configurations => ['Debug'], :source => 'https://github.com/OrzGeeker/Specs.git'
 ```
 
 ## Config In App
