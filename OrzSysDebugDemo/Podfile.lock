@@ -9,7 +9,7 @@ EXTERNAL SOURCES:
     :path: ../OrzSysDebug.podspec
 
 SPEC CHECKSUMS:
-  OrzSysDebug: ec49e362e2ddd44d81a7f84f6c3e4e31a5215cba
+  OrzSysDebug: d37ff7db0ab88d996e1b4c16cdd8457af869824a
 
 PODFILE CHECKSUM: efd99a5a95be821da24a0e92eab43d044afe35d4
 

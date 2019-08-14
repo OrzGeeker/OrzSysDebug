@@ -13,28 +13,14 @@ The Pod Use Apple's Private API, so you should only depend this pod for debug Ta
 pod 'OrzSysDebug', :configurations => ['Debug'], :source => 'https://github.com/OrzGeeker/Specs.git'
 ```
 
-## Config In App
-
-```
-#import <OrzSysDebug/OrzSysDebug.h>
-...
-
-- (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-
-    // Override point for customization after application launch.
-    [OrzSysDebug prepare];
-    
-    return YES;
-}
-...
-@end
-```
-
 ## Show The Debug Overlay
 
-When on device, you can tap status bar with two fingers to start UIDebuggingInformationOverlay。
+![show](toggle.gif)
 
-If you want show debug overlay with code,  refer to the following example:
+1. You can tap status bar with two fingers to show `UIDebuggingInformationOverlay`,
+this method is non-code intrusion。
+
+2. If you want show debug overlay with code,  refer to the following example:
 
 ```
 #import "ViewController.h"
@@ -50,21 +36,25 @@ If you want show debug overlay with code,  refer to the following example:
     // Do any additional setup after loading the view.
 }
 
+
 - (BOOL)canBecomeFirstResponder {
     return YES;
 }
 
+// Motion Event
 -(void)motionEnded:(UIEventSubtype)motion withEvent:(UIEvent *)event {
     if(motion != UIEventSubtypeMotionShake) return;
-    [OrzSysDebug show];
+    [OrzSysDebug toggle];
 }
 
+// Button Action
 - (IBAction)showSysDebug:(UIButton *)sender {
-    [OrzSysDebug show];
+    [OrzSysDebug toggle];
 }
 
 @end
 ```
+
 
 ## Demo
 

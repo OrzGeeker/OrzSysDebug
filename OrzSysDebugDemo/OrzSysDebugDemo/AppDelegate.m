@@ -7,7 +7,6 @@
 //
 
 #import "AppDelegate.h"
-#import <OrzSysDebug/OrzSysDebug.h>
 @interface AppDelegate ()
 
 @end
@@ -16,7 +15,6 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
-    [OrzSysDebug prepare];
     return YES;
 }
 

@@ -10,8 +10,7 @@
 NS_ASSUME_NONNULL_BEGIN
 
 @interface OrzSysDebug : NSObject
-+ (void)prepare;
-+ (void)show;
++ (void)toggle;
 @end
 
 NS_ASSUME_NONNULL_END

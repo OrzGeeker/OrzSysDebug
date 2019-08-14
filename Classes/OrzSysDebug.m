@@ -10,6 +10,12 @@
 
 @implementation OrzSysDebug
 
++ (void)load {
+
+    [[NSNotificationCenter defaultCenter] addObserver:[self class] selector:@selector(prepare) name:UIApplicationDidFinishLaunchingNotification object:nil];
+    
+}
+
 + (void)prepare {
 #if DEBUG
     
@@ -22,7 +28,7 @@
 #endif
 }
 
-+ (void)show {
++ (void)toggle {
     
 #if DEBUG
     

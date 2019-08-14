@@ -23,13 +23,15 @@
     return YES;
 }
 
+// Motion Event
 -(void)motionEnded:(UIEventSubtype)motion withEvent:(UIEvent *)event {
     if(motion != UIEventSubtypeMotionShake) return;
-    [OrzSysDebug show];
+    [OrzSysDebug toggle];
 }
 
+// Button Action
 - (IBAction)showSysDebug:(UIButton *)sender {
-    [OrzSysDebug show];
+    [OrzSysDebug toggle];
 }
 
 @end
