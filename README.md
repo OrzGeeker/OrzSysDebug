@@ -15,8 +15,6 @@ pod 'OrzSysDebug', :configurations => ['Debug'], :source => 'https://github.com/
 
 ## Show The Debug Overlay
 
-![show](toggle.gif)
-
 1. You can tap status bar with two fingers to show `UIDebuggingInformationOverlay`,
 this method is non-code intrusion。
 
@@ -55,9 +53,13 @@ this method is non-code intrusion。
 @end
 ```
 
-
 ## Demo
+
+### show the debug layer
+
+![show](toggle.gif)
+
+### the features of debuy layer
 
 ![OrzSysDebug.gif](OrzSysDebug.gif)
 
-- [Video Download(2.0M)](OrzSysDebug.mp4)
