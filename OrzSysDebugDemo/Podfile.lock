@@ -1,5 +1,5 @@
 PODS:
-  - OrzSysDebug (0.0.1)
+  - OrzSysDebug (0.0.2)
 
 DEPENDENCIES:
   - OrzSysDebug (from `../OrzSysDebug.podspec`)
@@ -9,7 +9,7 @@ EXTERNAL SOURCES:
     :path: ../OrzSysDebug.podspec
 
 SPEC CHECKSUMS:
-  OrzSysDebug: d37ff7db0ab88d996e1b4c16cdd8457af869824a
+  OrzSysDebug: 4b7c560ae9a4f7e8ba0d7e01797c556e05ede626
 
 PODFILE CHECKSUM: efd99a5a95be821da24a0e92eab43d044afe35d4
 

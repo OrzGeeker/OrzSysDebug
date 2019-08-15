@@ -17,20 +17,16 @@
 }
 
 + (void)prepare {
-#if DEBUG
     
 #pragma clang diagnostic push
 #pragma clang diagnostic ignored "-Warc-performSelector-leaks"
     id overlayClass = NSClassFromString(@"UIDebuggingInformationOverlay");
     [overlayClass performSelector:NSSelectorFromString(@"prepareDebuggingOverlay")];
 #pragma clang diagnostic pop
-    
-#endif
+
 }
 
 + (void)toggle {
-    
-#if DEBUG
     
 #pragma clang diagnostic push
 #pragma clang diagnostic ignored "-Warc-performSelector-leaks"
@@ -52,7 +48,6 @@
     }
 #pragma clang diagnostic pop
     
-#endif
 }
 
 @end
