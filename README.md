@@ -18,7 +18,9 @@ pod 'OrzSysDebug', :configurations => ['Debug'], :source => 'https://github.com/
 1. You can tap status bar with two fingers to show `UIDebuggingInformationOverlay`,
 this method is non-code intrusion。
 
-2. If you want show debug overlay with code,  refer to the following example:
+2. You can shake to show the debug overlay.
+
+3. If you want show debug overlay with code,  refer to the following example:
 
 ```
 #import "ViewController.h"

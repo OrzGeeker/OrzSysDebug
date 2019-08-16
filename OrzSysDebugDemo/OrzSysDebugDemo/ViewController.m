@@ -7,9 +7,7 @@
 //
 
 #import "ViewController.h"
-#import <OrzSysDebug/OrzSysDebug.h>
 @interface ViewController ()
-
 @end
 
 @implementation ViewController
@@ -18,20 +16,4 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
 }
-
-- (BOOL)canBecomeFirstResponder {
-    return YES;
-}
-
-// Motion Event
--(void)motionEnded:(UIEventSubtype)motion withEvent:(UIEvent *)event {
-    if(motion != UIEventSubtypeMotionShake) return;
-    [OrzSysDebug toggle];
-}
-
-// Button Action
-- (IBAction)showSysDebug:(UIButton *)sender {
-    [OrzSysDebug toggle];
-}
-
 @end

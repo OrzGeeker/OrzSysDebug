@@ -11,9 +11,14 @@
 @implementation OrzSysDebug
 
 + (void)load {
+    static dispatch_once_t onceToken;
+    dispatch_once(&onceToken, ^{
+        [[NSNotificationCenter defaultCenter] addObserver:[self class] selector:@selector(applicationDidFinishLaunching) name:UIApplicationDidFinishLaunchingNotification object:nil];
+    });
+}
 
-    [[NSNotificationCenter defaultCenter] addObserver:[self class] selector:@selector(prepare) name:UIApplicationDidFinishLaunchingNotification object:nil];
-    
++ (void)applicationDidFinishLaunching {
+    [self prepare];
 }
 
 + (void)prepare {
