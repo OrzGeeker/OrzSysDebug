@@ -10,17 +10,6 @@
 
 @implementation OrzSysDebug
 
-+ (void)load {
-    static dispatch_once_t onceToken;
-    dispatch_once(&onceToken, ^{
-        [[NSNotificationCenter defaultCenter] addObserver:[self class] selector:@selector(applicationDidFinishLaunching) name:UIApplicationDidFinishLaunchingNotification object:nil];
-    });
-}
-
-+ (void)applicationDidFinishLaunching {
-    [self prepare];
-}
-
 + (void)prepare {
     
 #pragma clang diagnostic push
@@ -32,6 +21,8 @@
 }
 
 + (void)toggle {
+    
+    [self prepare];
     
 #pragma clang diagnostic push
 #pragma clang diagnostic ignored "-Warc-performSelector-leaks"
