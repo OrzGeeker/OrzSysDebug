@@ -1,5 +1,5 @@
 //
-//  UIApplication+ShakeEvent.h
+//  UIApplication+Event.h
 //  OrzSysDebug
 //
 //  Created by wangzhizhou on 2019/8/16.
@@ -9,7 +9,7 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface UIApplication(ShakeEvent)
+@interface UIApplication(Event)
 
 @end
 

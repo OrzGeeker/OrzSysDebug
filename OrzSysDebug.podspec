@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name         = "OrzSysDebug"
-  s.version      = "0.0.5"
+  s.version      = "0.0.6"
   s.summary      = "A tool to enable UIDebuggingInformationOverlay for iOS 10 & 11 & 12."
   s.description  = <<-DESC
   A tool to enable UIDebuggingInformationOverlay for iOS 10 & 11 & 12. With This tool,
